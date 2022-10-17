@@ -1,0 +1,45 @@
+.this {
+    min-width: 350px;
+}
+.time {
+    font-size: 14px;
+    display: flex;
+    margin-left: 33px;
+    margin-bottom: 35px;
+   
+
+    flex-wrap: wrap;
+
+    @include desktop {
+        position: absolute;
+        margin-left: 273px;
+        margin-top: -43px;
+        font-size: 16px;
+       
+    }
+
+    &__item {
+        
+        background-color: #D9E8FF;
+        border-radius: 11px;
+        padding: 2px 13px;
+
+        margin-top: 2px;
+
+        
+
+        &:nth-child(n+5) {
+            display: none;
+        }
+        &.time__item.is-visible {
+            display: block;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+}
+.show-more {
+    border: none;
+}

@@ -1,0 +1,11 @@
+//breakpoint
+$desktop: 1110px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import "media.scss";
+@import "layout.scss";
+@import "components/price.scss";
+@import "components/description.scss";
+@import "components/time.scss";
